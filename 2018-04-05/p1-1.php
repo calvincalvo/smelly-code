@@ -34,7 +34,7 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF'])); //figure out the name of th
 		<div class="form-group row">
 		     <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Temperature</label>
 		     <div class="col-sm-10">
-		         <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" name="Temperature" placeholder="Place Temperature here">
+		         <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" name="Temperature" placeholder="Please place Temperature here">
 		     </div>
 		</div>
 		<div class="form-check">
@@ -66,6 +66,7 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF'])); //figure out the name of th
 	if(isset($_POST['Temperature']))
 	{
 	//check to see if the temperature input is a valid number if not show error and ask question again
+	// please was added in third commit
 	if(is_numeric ($temp)){
 		//convert temperature based on the radio button units
 		switch ($_POST['Units']){
